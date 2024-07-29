@@ -2,14 +2,30 @@
 	font-family: 'Arial';
 	background-color: #1c1e75;
 }
+html {
+	background-image: url('background-image-2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+body {
+	background: none;
+	width :100%;
+	height: 100%;
+}
+
 #login-container {
 	text-align: center;
 	margin-top: 200px;
-	width: 30%;
-	border: 3px solid black;
+	width: 35%;
+	border: 5px outset darkgrey;
 	padding: 5px;
-	margin-left: 30%;
-	background-color: yellow;
+	margin-left: 32.5%;
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 50vh;
+	border-radius: 20px;
+	
 }
 #em, #pass {
 	width: 300px;
@@ -18,21 +34,27 @@ label, b {
 	background: none;
 }
 h1, p {
-	background-color: yellow;
+	background: none;
+	color: white;
 }
 
 
 form{
 	padding:8px;
 	text-align: left;
-	background-color: #a2abba;
+	background: none;
+	margin: 12px;
+	color: white;
 }
 
 .button-group {
 	display: flex;
-	justify-content: center;
+	margin: -8px;
+	margin-top: 12px;
+	padding: 20px;
+	justify-content: flex-end;
 	align-items: flex-start;
-	background-color: #a2abba;
+	background: none;
 }
 .hover-elements{
 	background-color: white;
@@ -42,13 +64,16 @@ form{
 }
 
 .login-button {
-	border: outset blue;
+	border: outset;
 	border-radius: 15px;
-	background-color: blue;
-	color: white;
+	background-color: white;
 }
 
 .login-button:hover {
 	border: outset lightgrey;
 	background-color: grey;
+}
+
+input{
+	border-radius: 15px;
 }
