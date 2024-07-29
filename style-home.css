@@ -1,0 +1,101 @@
+html{
+	font-family: 'Arial';
+	
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-image: linear-gradient(grey, grey, grey, black);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.navbar{
+	display: flex;
+	height: 20vh;
+	justify-content: flex-end;
+	background-color: black;
+	color: white;
+}
+
+.navlist{
+	margin-top: auto;
+	list-style: none;
+}
+
+.navlist-item {
+	display: inline;
+	margin: 12px;
+}
+
+.navlink{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
+
+.navlink::after{
+	width:0%;
+	height: 2px;
+	color: #ed7c53;
+	transition: all 1s;
+}
+
+.navlink:hover{
+	color: #ed7c53;
+}
+
+.navlink::after:hover{
+	width:100%;
+	height: 2px;
+	color: #ed7c53;
+}
+
+.super-container {
+	display: flex;
+}
+
+.container {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #2b2b27;
+	border-radius: 20px;
+	margin: 20px;
+	max-width: 70%;
+	color: white;
+}
+
+.book-panel {
+	flex-wrap: wrap;
+	padding: 12px;
+	border-bottom: inset 3px grey;
+	width: 90%;
+	max-height: 200px;
+	margin: 12px;
+	margin-top: 30px;
+	border-radius: 20px;
+}
+
+
+
+.book-panel img{
+	float: right;
+	background-color: white;
+	max-height: 90%;
+	max-width: 25%;
+	border-radius: 20px;
+}
+
+.book-panel img::before:hover{
+	text: 
+}
+
+.book-panel span{
+	display: inline-block;
+	max-width: 70%;
+}
