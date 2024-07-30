@@ -1,28 +1,28 @@
 // script-index.js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
 
-	function getCookie(name) {
+	const loginForm = document.getElementById('loginForm');
+	
+	loginForm.addEventListener('submit', async (event) => {
+		event.preventDefault();
+		
+		const username = document.getElementById('em').value;
+		const password = document.getElementById('pass').value;
 
-		const value = `; ${document.cookie}`;
+		const formData = new formData()
+		formData.append('username', username);
+		formData.append('password', password);
 
-		const parts = value.split(`; ${name}=`);
-
-		if (parts.length === 2) return parts.pop().split(';').shift();
-
-	}
-
-
-
-	// Check if the user is logged in
-
-	const isLoggedIn = getCookie("isLoggedIn");
-
-	if (!isLoggedIn) {
-
-		// Redirect to the login page
-
-		window.location.href = "login.html";
-
-	}
-
+		try{
+			const response = await fetch('login.php', {
+				method: 'POST',
+				body: formData
+			});
+			
+			const status = await response.json();
+			
+			if(status.success){
+				window.location.href='index.html'
+			}
+		}
 });
