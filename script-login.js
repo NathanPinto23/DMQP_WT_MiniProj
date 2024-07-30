@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const username = document.getElementById('em').value;
 		const password = document.getElementById('pass').value;
 
-		const formData = new formData()
+		const formData = new FormData()
 		formData.append('username', username);
 		formData.append('password', password);
 
@@ -25,4 +25,5 @@ document.addEventListener("DOMContentLoaded", () => {
 				window.location.href='index.html'
 			}
 		}
+	});
 });
