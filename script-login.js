@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		formData.append('password', password);
 
 		try{
-			const response = await fetch('http://192.168.43.133/apiLMS/login.php', {
+			const response = await fetch('http://192.168.43.133:80/apiLMS/login.php', {
 				method: 'POST',
 				body: formData
 			});
