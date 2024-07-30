@@ -1,0 +1,15 @@
+*{
+	font-family='Arial';
+}
+form{
+	text-align: center;
+	margin-left: 500px;
+	padding-top: 20px;
+	width: 500px;
+	background-color: grey;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+h5{
+	display: inline;
+}
