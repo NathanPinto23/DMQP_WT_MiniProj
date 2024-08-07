@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ADD BOOK</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<form id="addBook">
+				<label>Book Title: </label><br>
+				<input type="text" id="title" size="30" required><br><br>
+				<label>Author: </label><br>
+				<input type="text" id="author" size="30" required><br><br>
+				<label>Synopsis: </label><br>
+				<textarea id="synopsis" name="synopsis" rows="5" cols="30"></textarea><br><br>
+				<input type="radio" id="fiction" name="gencat"><label for="fiction">Fiction</label><br>
+				<input type="radio" id="nonfiction" name="gencat"><label for="nonfiction">Non-fiction</label><br>
+				<label>Genre: </label><br>
+				<select id="f-genre">
+					<option value="Action/Adventure" selected>Action/Adventure</option>
+					<option value="Children’s">Children's</option>
+					<option value="Contemporary">Contemporary</option>	
+					<option value="Fantasy">Fantasy</option>
+					<option value="Graphic novel">Graphic novel</option>
+					<option value="Historical">Historicalv
+					<option value="Horror">Horror</option>
+					<option value="Literary">Literary</option>
+					<option value="Mystery">Mystery</option>
+					<option value="New adult">New adult</option>
+					<option value="Romance">Romance</option>
+					<option value="Satire">Satire</option>
+					<option value="Science Fiction">Science Fiction</option>
+					<option value="Short story">Short story</option>
+					<option value="Thriller">Thriller</option>
+					<option value="Western">Western</option>
+					<option value="Women’s fiction">Women’s fiction</option>
+					<option value="Young adult">Young adult</option>
+					<option value="other">other</option>
+				</select>
+				<br>
+				<br>
+				<select id="nf-genres">
+					<option value="Art & photography">Art & photography</option>
+					<option value="Autobiography/Memoir">Autobiography/Memoir</option>
+					<option value="Contemporary">Contemporary</option>
+					<option value="Fantasy">Fantasy</option>
+					<option value="Essays">Essays</option>
+					<option value="Food & drink">Food & drink</option>
+					<option value="History">History</option>
+					<option value="How-To/Guides">How-To/Guides</option>
+					<option value="Humanities & social sciences">Humanities & social sciences</option>
+					<option value="Humor">Humor</option>
+					<option value="Parenting">Parenting</option>
+					<option value="Philosophy">Philosophy</option>
+					<option value="Religion & spirituality">Religion & spirituality</option>
+					<option value="Science & technology">Science & technology</option>
+					<option value="Thriller">Thriller</option>
+					<option value="Self-help">Self-help</option>
+					<option value="Travel">Travel</option>
+					<option value="True crime">True crime</option>
+					<option value="other">other</option>
+				</select><br><br>
+				<input type="submit">
+				<input type="reset">
+			</form>
+		</div>
+	</body>
+</html>
