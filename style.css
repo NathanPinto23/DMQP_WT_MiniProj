@@ -1,0 +1,144 @@
+/*
+colors:
+201E43
+134B70
+508C9B
+EEEEEE
+*/
+*{
+	font-family: 'Arial';	
+}
+
+body{
+	color: white;
+	height: 100vh;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #eeeeee;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*******************************************************/
+/*NAVBAR STYLING*/
+.navbar{
+	display: flex;
+	position: sticky;
+	top: 0;
+	height: 20vh;
+	justify-content: flex-end;
+	background-color: #201E43;
+	color: white;
+}
+
+.navlist{
+	margin-top: auto;
+	list-style: none;
+}
+
+.navlist-item {
+	display: inline;
+	margin: 12px;
+}
+
+.navlink{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
+
+.navlink::after{
+	width:0%;
+	height: 2px;
+	color: #ed7c53;
+	transition: all 1s;
+}
+
+.navlink:hover{
+	color: #ed7c53;
+}
+
+.navlink::after:hover{
+	width:100%;
+	height: 2px;
+	color: #ed7c53;
+}
+
+/*END OF NAVBAR STYLING*/
+/*******************************************************/
+
+/*******************************************************/
+/*GENERAL CONTAINERS*/
+.super-container {
+	display: flex;
+}
+
+.container {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	background-color: #dddddd;
+	border-radius: 20px;
+	margin: 20px;
+	max-width: 70%;
+	color: black;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*******************************************************/
+/*BOOK PANEL*/
+.book-panel {
+	flex-wrap: wrap;
+	padding: 12px;
+	border-top: 0.5px solid black;
+	border-right: 0.5px solid black;
+	border-left: 0.5px solid black;
+	border-bottom: inset 3px grey;
+	width: 90%;
+	max-height: 200px;
+	margin: 12px;
+	margin-top: 30px;
+	border-radius: 20px;
+}
+
+.book-panel img{
+	float: right;
+	background-color: white;
+	max-height: 90%;
+	max-width: 25%;
+	border-radius: 20px;
+}
+
+.book-panel img::before:hover{
+	text: 
+}
+
+.book-panel span{
+	display: inline-block;
+	max-width: 70%;
+}
+/*******************************************************/
+/*BOOK DISPLAY*/
+#book-display{
+	border: none;
+	background: none;
+}
+
+#book-display th{
+	border: none;
+	background-color: #134b70;
+	color: white;
+	padding: 8px;
+}
+#book-display td{
+	width: 10px;
+	background-color: #eeeeee;
+	padding: 8px;
+}
+
+#isbn-title{
+	border-radius: 15px 0px 0px 0px;
+}
+#status-title{
+	border-radius: 0px 15px 0px 0px;
+}

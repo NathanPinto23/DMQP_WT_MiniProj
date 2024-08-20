@@ -75,6 +75,6 @@ form{
 	background-color: grey;
 }
 
-input{
+input, button{
 	border-radius: 15px;
 }	

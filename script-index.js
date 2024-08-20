@@ -1,28 +1,30 @@
-// // script-index.js
-// document.addEventListener("DOMContentLoaded", function() {
+// script-index.js
+/*
+document.addEventListener("DOMContentLoaded", function() {
 
-// 	function getCookie(name) {
+	function getCookie(name) {
 
-// 		const value = `; ${document.cookie}`;
+		const value = `; ${document.cookie}`;
 
-// 		const parts = value.split(`; ${name}=`);
+		const parts = value.split(`; ${name}=`);
+		console.log(parts);
+		if (parts.length === 2) return parts.pop().split(';').shift();
 
-// 		if (parts.length === 2) return parts.pop().split(';').shift();
-
-// 	}
+	}
 
 
 
-// 	// Check if the user is logged in
+	// Check if the user is logged in
 
-// 	const isLoggedIn = getCookie("isLoggedIn");
+	const isLoggedIn = getCookie("isLoggedIn");
+	console.log(isLoggedIn);
+	if (!isLoggedIn) {
 
-// 	if (!isLoggedIn) {
+		// Redirect to the login page
 
-// 		// Redirect to the login page
+		window.location.href = "login.html";
 
-// 		window.location.href = "login.html";
+	}
 
-// 	}
-
-// });
+});
+*/
