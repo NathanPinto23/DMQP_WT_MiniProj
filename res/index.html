@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LMS</title>
+	<link rel="stylesheet" type="text/css" href="style-home.css">
+	<script src="script-index.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		<h1 id="head">Library</h1>
+		<ul class="navlist">
+			<li class="navlist-item">
+				<a class="navlink" href="#"><b>HOME</b></a>
+			</li>
+			<li class="navlist-item">
+				<a class="navlink" href="#"><b>LIBRARY</b></a>
+			</li>
+			<li class="navlist-item">
+				<a class="navlink" href="project1.html" target="_blank"><b>LOGIN</b></a>
+			</li>
+			<li class="navlist-item">
+				<a class="navlink" href="project2.html" target="_blank"><b>SIGN-UP</b></a>
+			</li>
+			<li class="navlist-item">
+				<input type="text" id="search-bar" placeholder="Title/Author/Genre">
+				<button>🔍</button>
+			</li>
+		</ul>
+	</div>
+<div class="super-container">
+	<div class="container" id="recently-added" style="width: 60%;">
+		<h2>RECENTLY ADDED</h2>
+		<a href="new-books.html" style="margin-left: auto;">see all -></a>
+		<div class="book-panel">
+			<h3>Title</h3>
+			<span>This is a description for a recently added book. Click on the book image to add a new book.</span>
+			<a href="addBook.html" target="_blank"><img src="book-icon.jpg" alt="Book image"></a>
+		</div>
+		<div class="book-panel">
+		</div>
+		<div class="book-panel">
+		</div>
+	</div>
+	<div class="container" style="width: 40%;">
+		<div class="book-panel" id="books-count">
+			<h3>Books</h3>
+			
+		</div>
+		<div class="book-panel" id="ebooks-count">
+			<h3>e-Books</h3>
+			<ol>
+				<li><a class="navlink" href="https://ia904501.us.archive.org/4/items/rich-dad-poor-dad_202106/Rich%20Dad%20Poor%20Dad.pdf" target="_blank">Rich Dad Poor Dad</a></li>
+				<li><a class="navlink" href="https://vardhaman.org/wp-content/uploads/2021/03/CP.pdf" target="_blank">Programming in C</a></li>
+				<li><a class="navlink" href="https://giove.isti.cnr.it/demo/eread/libri/angry/mockingbird.pdf" target="_blank">To Kill a Mockingbird</a></li>
+			</ol>
+		</div>
+		<div class="book-panel" id="user-count">
+			<h3>Users</h3>
+		</div>
+	</div> 
+</div>
+
+</body>
+</html>
